@@ -1,0 +1,9 @@
+Task 1: Implement a "big red button" to prevent too many restarts of a deployment.
+
+This solution is implemented as a script named watcher.sh. It is run in the background, detachable from the controlling application. Whenever a deployment is attampted more than three times, it is scaled-down to zero.
+
+Note: Due to its demanding configuration, swype-deployment.yml could not reach the ready state. The values of 'cpu' and 'memory' were changed from 4Gb to 1Gb in order to make it work. 
+
+Task 2:
+
+Integration with commercial products such as Jira, PagerDuty, and Grafana IRM is one simple solution.
